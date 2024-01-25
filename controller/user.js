@@ -6,7 +6,7 @@ const jwt = require('jsonwebtoken');
 
 
 function genrateAcesstoken(id, ispremiumuser) {
-    return jwt.sign({ userid: id, ispremiumuser: ispremiumuser }, process.env.secretKey)
+    return jwt.sign({ userid: id, ispremiumuser: ispremiumuser }, process.env.TOKEN_SECRET)
 }
 
 
@@ -74,7 +74,7 @@ exports.updatetoken = async (req, res) => {
     const token = req.header('Authorization');
 
     try {
-        const decodedToken = jwt.verify(token, process.env.secretKey);
+        const decodedToken = jwt.verify(token, process.env.TOKEN_SECRET);
 
         const user = await userdetailstable.findOne({ where: { id: decodedToken.userid } });
 

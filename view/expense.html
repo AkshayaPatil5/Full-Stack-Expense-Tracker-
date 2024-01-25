@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
         <a class="navbar-brand" href="#">
             <img src="\pics\Your paragraph text.png" alt="Logo" width="60" height="60" class="d-inline-block align-top">
         </a>
@@ -40,9 +40,9 @@
         </div>
     </nav>
     <div class="container mt-4">
-        <div class="card bg-primary text-white">
+        <div class="card bg-dark text-white">
             <div class="card-body">
-                <form class="bg-primary p-3 rounded" id="form">
+                <form class="bg-white p-3 rounded" id="form">
                     <div class="row mb-3">
                         <div class="col-md-4">
                             <label for="amount" class="form-label text-black border-bottom border-dark">Amount
@@ -63,12 +63,13 @@
                             <select id="catogary" class="form-select" name="catogary" required>
                                 <option selected disabled>Select expense Category</option>
                                 <option>Home</option>
-                                <option>Fuel</option>
-                                <option>Groceries</option>
+                                <option>Food</option>
+                                <option>Travelling</option>
+                                <option>Shopping</option>
                             </select>
                         </div>
                     </div>
-                    <button class="btn btn-light" id="button" data-id="">AddExpense</button>
+                    <button class="btn btn-success" id="button" data-id="">AddExpense</button>
                 </form>
             </div>
         </div>
@@ -83,18 +84,17 @@
                         <th>Description</th>
                         <th>Category</th>
                         <th></th>
-                        <!-- You can add more headers if needed -->
                     </tr>
                 </thead>
                 <tbody id="userTableBody">
-                    <!-- User data rows will be added here -->
+                   
                 </tbody>
             </table>
         </div>
         <div class="pagination-controls text-center mt-4">
-            <button id="prevPageButton" class="btn btn-primary">Previous</button>
+            <button id="prevPageButton" class="btn btn-warning">Previous</button>
             <span>Page <span id="currentPage">1</span> of <span id="totalPages">1</span></span>
-            <button id="nextPageButton" class="btn btn-primary">Next</button>
+            <button id="nextPageButton" class="btn btn-warning">Next</button>
         </div>
     </div>
 

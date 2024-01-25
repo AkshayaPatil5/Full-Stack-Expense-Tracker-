@@ -69,7 +69,7 @@ function buttons(responsedata) {
     const actionCell = document.createElement('td');
 
     const deleteButton = document.createElement('button');
-    deleteButton.className = 'btn btn-secondary';
+    deleteButton.className = 'btn btn-danger';
     deleteButton.textContent = 'Delete';
     deleteButton.onclick = () => {
         const deleteid = responsedata.id;

@@ -7,9 +7,9 @@
 }
 
 :root {
-    --linear-grad: linear-gradient(to right, #141E30, #243B55);
+    --linear-grad: linear-gradient(to right, #1dbbca, #13e0d6);
     --grad-clr1: #141E30;
-    --grad-clr2: #243B55;
+    --grad-clr2:  #13e0d6;
 }
 
 #quote {
@@ -33,7 +33,7 @@ body {
     width: 850px;
     height: 500px;
     background-color: #FFF;
-    box-shadow: 25px 30px 55px #5557;
+    box-shadow: 25px 30px 55px rgba(169, 158, 158, 0.467);
     border-radius: 13px;
     overflow: hidden;
 }
